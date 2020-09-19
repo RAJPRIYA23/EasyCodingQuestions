@@ -1,0 +1,51 @@
+Given non-zero two integers N and M. The problem is to find the number closest to N and divisible by M. 
+If there are more than one such number, then output the one having maximum absolute value.
+
+Input:
+N = 13 , M = 4
+Output:
+12
+Explanation:
+12 is the Closest Number to
+13 which is divisible by 4.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG 
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		int t= sc.nextInt();
+		for(int i=1;i<=t;i++)
+		{
+		    double n= sc.nextInt();
+		    int m= sc.nextInt();
+		    double temp1=Math.floor(n/m);
+		    double temp2=Math.abs(temp1);
+		    if((Math.abs((Math.abs(n/m))-temp2))<0.5)
+		    {
+		        System.out.println(((int) Math.floor(n/m))*m);
+		    }
+		    else if((Math.abs((Math.abs(n/m))-temp2))>0.5)
+		    {
+		        System.out.println(((int) Math.ceil(n/m))*m);
+		    }
+		    else
+		    {
+		        if(n<0)
+		        {
+		            System.out.println(((int) Math.floor(n/m))*m);
+		        }
+		        else
+		        {
+		            System.out.println(((int) Math.ceil(n/m))*m);
+		        }
+		    }
+		}
+	}
+}
