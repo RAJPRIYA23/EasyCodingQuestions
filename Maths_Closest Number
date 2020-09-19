@@ -1,3 +1,4 @@
+/*
 Given non-zero two integers N and M. The problem is to find the number closest to N and divisible by M. 
 If there are more than one such number, then output the one having maximum absolute value.
 
@@ -8,8 +9,9 @@ Output:
 Explanation:
 12 is the Closest Number to
 13 which is divisible by 4.
+*/
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 import java.util.*;
 import java.lang.*;
