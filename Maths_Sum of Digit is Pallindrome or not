@@ -1,5 +1,4 @@
 /*
-
 Given a number N.Find if the digit sum(or sum of digits) of N is a Palindrome number or not.
 Note:A Palindrome number is a number which stays the same when reversed.Example- 121,131,7 etc.
 
@@ -11,7 +10,6 @@ Explanation:
 The digit sum of 56 is 5+6=11.
 Since, 11 is a palindrome number.Thus,
 answer is YES.
-
 */
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------
