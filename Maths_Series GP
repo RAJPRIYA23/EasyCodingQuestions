@@ -1,0 +1,40 @@
+Given the first 2 terms A and B of a Geometric Series. The task is to find the Nth term of the series.
+
+Constraints:
+1 <= T <= 30
+-100 <= A <= 100
+-100 <= B <= 100
+1 <= N <= 5
+
+Example:
+Input:
+2
+2 3
+1
+1 2
+2
+
+Output:
+2
+2
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG 
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc= new Scanner(System.in); 
+		int t= sc.nextInt();  
+		for(int i=1;i<=t;i++)
+		{
+		  int a= sc.nextInt();  
+		  int b= sc.nextInt();  
+		  int n= sc.nextInt(); 
+		  System.out.println((int)Math.floor((a*(Math.pow(((double)b/a),(n-1))))));
+		}
+	}
+}
