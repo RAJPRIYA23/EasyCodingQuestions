@@ -1,5 +1,5 @@
 # VeryEasyCodingQuestions
 
 
-A set of very very easy Questions of Coding.
-Coding Questions for beginner.
+A set of very easy Questions of Coding for beginners.
+
