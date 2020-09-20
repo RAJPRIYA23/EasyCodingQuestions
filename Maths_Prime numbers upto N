@@ -1,0 +1,58 @@
+/*
+Constraints:
+1 <= T<= 100
+1 <= N <= 104
+
+Example:
+Input:
+2
+10
+35
+Output:
+2 3 5 7
+2 3 5 7 11 13 17 19 23 29 31 
+*/
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG 
+{
+	public static void main (String[] args)
+	{
+		Scanner sc= new Scanner(System.in);  
+	    int t= sc.nextInt();  
+	    for(int i=1;i<=t;i++)
+	    {
+	        int n=sc.nextInt();
+	        for(int k=2;k<=n;k++)
+	        {
+	            int temp=(int)Math.sqrt(k);
+	            if(k%2==0 && k!=2) 
+                { 
+                    continue;
+                } 
+                else
+                {
+                    int j;
+                    for(j=3;j<=temp;j+=2) 
+                    { 
+                        if(k%j==0) 
+                        { 
+                        break;
+                        } 
+                    }
+                    if(j>temp)
+                    {
+                        System.out.print(k+" ");
+                    }
+                }
+	        }
+	        System.out.println();  
+        }
+	}
+}
